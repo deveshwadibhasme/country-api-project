@@ -1,5 +1,5 @@
 const container = document.querySelector('.country-container')
-fetch('/data.json')
+fetch('data.json')
     .then((res) => res.json())
     .then((data) => data.forEach(country => {
         let countryCard = document.createElement('div')
